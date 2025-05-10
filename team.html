@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда - Карьерный марафон</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .member-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 3px solid #007bff;
+        }
+        .member-role {
+            color: #007bff;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <h1>Карьерный марафон 2025</h1>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="companies/yandex.html">Яндекс</a></li>
+                        <li><a href="companies/sber.html">Сбербанк</a></li>
+                        <li><a href="companies/wildberries.html">Wildberries</a></li>
+                        <li><a href="companies/vtb.html">ВТБ</a></li>
+                        <li><a href="journal.html">Журнал</a></li>
+                        <li><a href="team.html" class="active">Команда</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Наша команда</h1>
+        
+        <div class="team-members">
+            <div class="member-card">
+                <img src="images/team/member1.jpg" alt="Конев Владимир" class="member-photo">
+                <h3>Конев Владимир</h3>
+                <div class="member-role">Разработчик алгоритмов</div>
+                <p>Решил задачу на динамические массивы, сделал фотоотчёт</p>
+            </div>
+            
+            <div class="member-card">
+                <img src="images/team/member2.jpg" alt="Андрей Смирнов" class="member-photo">
+                <h3>Андрей Смирнов</h3>
+                <div class="member-role">Контент-менеджер</div>
+                <p>Провёл интервью с представителями компаний</p>
+            </div>
+            
+            <div class="member-card">
+                <img src="images/team/member3.jpg" alt="Владислав Шульгин" class="member-photo">
+                <h3>Владислав Шульгин</h3>
+                <div class="member-role">Дизайнер</div>
+                <p>Разработал код и дизайн для сайта</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Карьерный марафон</h3>
+                    <p>Московский Политех<br>22 апреля 2025 года</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Команда проекта</h3>
+                    <ul>
+                        <li><a href="team.html">Участники</a></li>
+                        <li><a href="journal.html">Наш опыт</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>vladik.shulgin11@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Команда Московского Политеха. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

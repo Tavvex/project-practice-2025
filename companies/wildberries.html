@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildberries - Карьерный марафон</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .company-header {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .company-logo {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        .tab-system {
+            margin-top: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .tab-nav {
+            display: flex;
+            background: #f5f5f5;
+        }
+        .tab-nav-btn {
+            padding: 1rem 1.5rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: #555;
+            position: relative;
+        }
+        .tab-nav-btn.active {
+            color: #ff4d00;
+            font-weight: bold;
+        }
+        .tab-nav-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #ff4d00;
+        }
+        .tab-panel {
+            display: none;
+            padding: 2rem;
+            background: white;
+        }
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.4s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .course-card {
+            background: #fff8f5;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #ff4d00;
+        }
+        .qr-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .qr-code {
+            max-width: 200px;
+            display: inline-block;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <h1>Карьерный марафон 2025</h1>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="yandex.html">Яндекс</a></li>
+                        <li><a href="sber.html">Сбербанк</a></li>
+                        <li><a href="wildberries.html" class="active">Wildberries</a></li>
+                        <li><a href="vtb.html">ВТБ</a></li>
+                        <li><a href="../journal.html">Журнал</a></li>
+                        <li><a href="../team.html">Команда</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="company-header">
+            <img src="../images/companies/wb-logo.png" alt="Wildberries" class="company-logo">
+            <h1>Карьерные возможности в Wildberries</h1>
+        </div>
+
+        <div class="tab-system">
+            <div class="tab-nav">
+                <button class="tab-nav-btn active" data-tab="techschool">WB Техношкола</button>
+                <button class="tab-nav-btn" data-tab="internships">Стажировки</button>
+                <button class="tab-nav-btn" data-tab="resources">Ресурсы</button>
+            </div>
+
+            <div id="techschool" class="tab-panel active">
+                <h2>WB Техношкола</h2>
+                <div class="course-card">
+                    <h3>Формат обучения</h3>
+                    <ul>
+                        <li>Бесплатные онлайн-курсы</li>
+                        <li>3-4 месяца обучения</li>
+                        <li>~18 часов в неделю</li>
+                        <li>Работа над реальными бизнес-проектами</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <h3>Доступные направления</h3>
+                    <ul>
+                        <li>Android-разработка</li>
+                        <li>Горутиновый Golang</li>
+                        <li>Хардкорный JavaScript</li>
+                        <li>Компьютерное зрение</li>
+                        <li>iOS-разработка</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="internships" class="tab-panel">
+                <h2>Стажировки в Wildberries</h2>
+                <div class="course-card">
+                    <h3>Требования к кандидатам</h3>
+                    <ul>
+                        <li>Базовые знания в выбранной технологии</li>
+                        <li>Готовность к обучению</li>
+                        <li>Умение работать в команде</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <h3>Преимущества</h3>
+                    <ul>
+                        <li>Опытные наставники</li>
+                        <li>Возможность трудоустройства</li>
+                        <li>Гибкий график</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="resources" class="tab-panel">
+                <h2>Полезные ресурсы</h2>
+                <div class="course-card">
+                    <h3>Карьерный портал WB</h3>
+                    <a href="https://career.wb.ru" target="_blank" class="btn">career.wb.ru</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Карьерный марафон</h3>
+                    <p>Московский Политех<br>22 апреля 2025 года</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Команда проекта</h3>
+                    <ul>
+                        <li><a href="../team.html">Участники</a></li>
+                        <li><a href="../journal.html">Наш опыт</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>vladik.shulgin11@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Команда Московского Политеха. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab-nav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                
+                document.querySelectorAll('.tab-nav-btn').forEach(b => 
+                    b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                document.querySelectorAll('.tab-panel').forEach(p => 
+                    p.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
