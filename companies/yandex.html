@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Яндекс - Карьерный марафон</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .company-header {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .company-logo {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        .tab-system {
+            margin-top: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .tab-nav {
+            display: flex;
+            background: #f5f5f5;
+        }
+        .tab-nav-btn {
+            padding: 1rem 1.5rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: #555;
+            position: relative;
+        }
+        .tab-nav-btn.active {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        .tab-nav-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #ff0000;
+        }
+        .tab-panel {
+            display: none;
+            padding: 2rem;
+            background: white;
+        }
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.4s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .program-card {
+            border-left: 4px solid #ff0000;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .code-block {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <h1>Карьерный марафон 2025</h1>
+                </a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="yandex.html" class="active">Яндекс</a></li>
+                        <li><a href="sber.html">Сбербанк</a></li>
+                        <li><a href="wildberries.html">Wildberries</a></li>
+                        <li><a href="vtb.html">ВТБ</a></li>
+                        <li><a href="../journal.html">Журнал</a></li>
+                        <li><a href="../team.html">Команда</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="company-header">
+            <img src="../images/companies/yandex-logo.png" alt="Яндекс" class="company-logo">
+            <h1>Карьерные возможности в Яндексе</h1>
+        </div>
+
+        <div class="tab-system">
+            <div class="tab-nav">
+                <button class="tab-nav-btn active" data-tab="schools">Летние школы</button>
+                <button class="tab-nav-btn" data-tab="task">Решенная задача</button>
+                <button class="tab-nav-btn" data-tab="process">Процесс отбора</button>
+            </div>
+
+            <div id="schools" class="tab-panel active">
+                <h2>Направления подготовки</h2>
+                
+                <div class="program-card">
+                    <h3>Школа бэкенд-разработки</h3>
+                    <p><strong>Стек технологий:</strong> C++, алгоритмы, системы хранения данных</p>
+                    <p><strong>Формат:</strong> 2 месяца интенсивного обучения</p>
+                    <p class="highlight">70% участников получают оффер на стажировку</p>
+                </div>
+
+                <div class="program-card">
+                    <h3>Школа разработки интерфейсов</h3>
+                    <p><strong>Стек технологий:</strong> JavaScript, React, TypeScript</p>
+                    <p><strong>Проекты:</strong> Реальные задачи от продуктов Яндекса</p>
+                </div>
+            </div>
+
+            <div id="task" class="tab-panel">
+                <h2>Алгоритмическая задача "Выставление тегов"</h2>
+                <div class="code-block">
+                    <pre><code class="language-python">def main():
+    n = int(input())
+    if n == 1:
+        print(1)
+    elif n == 2:
+        print(2)
+    else:
+        tags = [0] * 36
+        tags[1] = 1
+        tags[2] = 1
+        for i in range(3,n+1):
+            tags[i] = tags[i-1] + tags[i-2]
+        print(sum(tags))
+if __name__ == '__main__':
+    main()</code></pre>
+                </div>
+                <a href="https://coderun.yandex.ru/problem/calculate-tags/" target="_blank" class="btn">Оригинал задачи</a>
+            </div>
+
+            <div id="process" class="tab-panel">
+                <h2>Этапы отбора</h2>
+                <ol class="steps">
+                    <li>Решить 3 алгоритмические задачи</li>
+                    <li>Написать мотивационное письмо</li>
+                    <li>Заполнить анкету</li>
+                    <li>Пройти техническое собеседование</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Карьерный марафон</h3>
+                    <p>Московский Политех<br>22 апреля 2025 года</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Команда проекта</h3>
+                    <ul>
+                        <li><a href="../team.html">Участники</a></li>
+                        <li><a href="../journal.html">Наш опыт</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>vladik.shulgin11@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Команда Московского Политеха. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.tab-nav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+                
+                document.querySelectorAll('.tab-nav-btn').forEach(b => 
+                    b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                document.querySelectorAll('.tab-panel').forEach(p => 
+                    p.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
