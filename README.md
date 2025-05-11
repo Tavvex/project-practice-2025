@@ -11,6 +11,8 @@
 ## Задание
 
 Задание размещено в папке **task** в файле [README.md](task/README.md).
+Markdown-документация размещена в папке **docs**
+Сайт можно посмотреть [по ссылке](https://tavvex.github.io/project-practice-2025/site)
 
 ## Вариативная часть задания
 
