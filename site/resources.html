@@ -2,49 +2,55 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Ресурсы</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Ресурсы - EcoMonitor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Ресурсы проекта</h1>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
+                <h1>EcoMonitor</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
-                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h2>Полезные материалы</h2>
-        
-        <div class="card">
-            <h3>Документация</h3>
-            <ul>
-                <li><a href="https://github.com/mospol/practice-2025-1/blob/master/task/README.md">Задание на проектную практику</a></li>
-            </ul>
-        </div>
-        
-        <div class="card">
-            <h3>Ссылки</h3>
-            <ul>
-                <li><a href="https://docs.python.org/" target="_blank">Python документация</a></li>
-                <li><a href="https://www.sqlite.org/docs.html" target="_blank">SQLite документация</a></li>
-                <li><a href="https://github.com/Tavvex/project-practice-2025" target="_blank">Git репозиторий</a></li>
-            </ul>
-        </div>
+    <main>
+        <section class="resources">
+            <div class="container">
+                <h2>Полезные ресурсы</h2>
+                
+                <div class="resource-card">
+                    <h3>Партнёры</h3>
+                    <ul>
+                        <li><a href="https://mospolytech.ru" target="_blank">Московский Политех</a></li>
+                        <li><a href="https://eco.gov.ru" target="_blank">Минприроды России</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>Техническая документация</h3>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Учебный проект. Московский Политех.</p>
+            <p>© 2025 EcoMonitor. Московский Политех</p>
         </div>
     </footer>
 </body>

@@ -2,51 +2,53 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Команда</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Команда - EcoMonitor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Наша команда</h1>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
+                <h1>EcoMonitor</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
-                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h2>Участники проекта</h2>
-        
-        <div class="card">
-            <h3>Шульгин Владислав</h3>
-            <p>Frontend разработчик</p>
-            <p>Создал интерфейс проекта</p>
-        </div>
-        
-        <div class="card">
-            <h3>Конев Владимир</h3>
-            <p>Backend разработчик</p>
-            <p>Работал с базой данных и API</p>
-        </div>
-        
-        <div class="card">
-            <h3>Смирнов Андрей</h3>
-            <p>Руководитель проекта</p>
-            <p>Координировал работу команды</p>
-        </div>
+    <main>
+        <section class="team">
+            <div class="container">
+                <h2>Наша команда</h2>
+                
+                <div class="member">
+                    <img src="assets/images/team.jpg" alt="Иван Петров">
+                    <h3>Иван Петров</h3>
+                    <p><strong>Роль:</strong> Руководитель проекта</p>
+                    <p><strong>Вклад:</strong> Координация работы, разработка архитектуры</p>
+                </div>
+                
+                <div class="member">
+                    <img src="assets/images/team.jpg" alt="Анна Сидорова">
+                    <h3>Анна Сидорова</h3>
+                    <p><strong>Роль:</strong> Backend-разработчик</p>
+                    <p><strong>Вклад:</strong> Разработка API, работа с базами данных</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Учебный проект. Московский Политех.</p>
+            <p>© 2025 EcoMonitor. Московский Политех</p>
         </div>
     </footer>
 </body>

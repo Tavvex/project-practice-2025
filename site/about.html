@@ -2,43 +2,53 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>О проекте</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>О проекте - EcoMonitor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+   <header>
         <div class="container">
-            <h1>О проекте</h1>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
+                <h1>EcoMonitor</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
-                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h2>Цель проекта</h2>
-        <p>Разработка системы для работы с отложенными сообщениями в рамках учебного курса.</p>
-        
-        <div class="card">
-            <h3>Функционал</h3>
-            <ul>
-                <li>Создание сообщений</li>
-                <li>Хранение в базе данных</li>
-                <li>Отложенная отправка</li>
-            </ul>
-        </div>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>О проекте EcoMonitor</h2>
+                <div class="content-block">
+                    <img src="assets/images/meeting.jpg" alt="Работа над проектом">
+                    <div class="text">
+                        <h3>Цель проекта</h3>
+                        <p>Создание системы для мониторинга экологических показателей в городской среде с возможностью прогнозирования.</p>
+                        
+                        <h3>Технологии</h3>
+                        <ul>
+                            <li>Датчики качества воздуха и воды</li>
+                            <li>Облачная платформа для сбора данных</li>
+                            <li>Веб-интерфейс для визуализации</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Учебный проект. Московский Политех.</p>
+            <p>© 2025 EcoMonitor. Московский Политех</p>
         </div>
     </footer>
 </body>

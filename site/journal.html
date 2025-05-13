@@ -2,48 +2,58 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Журнал проекта</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Журнал - EcoMonitor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Журнал проекта</h1>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
+                <h1>EcoMonitor</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
-                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h2>Ход работы</h2>
-        
-        <div class="card">
-            <h3>23 апреля</h3>
-            <p>Начало работы над проектом. Составлен план.</p>
-        </div>
-        
-        <div class="card">
-            <h3>5 мая</h3>
-            <p>Реализован основной функционал backend.</p>
-        </div>
-        
-        <div class="card">
-            <h3>13 мая</h3>
-            <p>Завершение работы над проектом.</p>
-        </div>
+    <main>
+        <section class="journal">
+            <div class="container">
+                <h2>Журнал проекта</h2>
+                
+                <article class="entry">
+                    <h3>15 марта 2024</h3>
+                    <img src="assets/images/meeting.jpg" alt="Совещание">
+                    <p>Проведено первое совещание команды. Определены основные задачи и сроки выполнения проекта.</p>
+                </article>
+                
+                <article class="entry">
+                    <h3>1 апреля 2024</h3>
+                    <p>Завершена разработка прототипа датчика качества воздуха. Начато тестирование.</p>
+                </article>
+                
+                <article class="entry">
+                    <h3>20 апреля 2024</h4>
+                    <video controls>
+                        <source src="assets/videos/demo.mp4" type="video/mp4">
+                    </video>
+                    <p>Создан первый работающий прототип системы. Видеодемонстрация доступна выше.</p>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Учебный проект. Московский Политех.</p>
+            <p>© 2025 EcoMonitor. Московский Политех</p>
         </div>
     </footer>
 </body>
