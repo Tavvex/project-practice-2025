@@ -2,132 +2,58 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Журнал - Карьерный марафон</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 3rem auto;
-            padding-left: 2rem;
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 7px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #eee;
-        }
-        .timeline-item {
-            position: relative;
-            padding-bottom: 2rem;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -2rem;
-            top: 0;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: #007bff;
-        }
-        .timeline-date {
-            font-weight: bold;
-            color: #007bff;
-        }
-        .timeline-content {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-    </style>
+    <title>Журнал - EcoMonitor</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header class="main-header">
+    <header>
         <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">
-                    <h1>Карьерный марафон 2025</h1>
-                </a>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="companies/yandex.html">Яндекс</a></li>
-                        <li><a href="companies/sber.html">Сбербанк</a></li>
-                        <li><a href="companies/wildberries.html">Wildberries</a></li>
-                        <li><a href="companies/vtb.html">ВТБ</a></li>
-                        <li><a href="journal.html" class="active">Журнал</a></li>
-                        <li><a href="team.html">Команда</a></li>
-                    </ul>
-                </nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
+                <h1>EcoMonitor</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="page-title">Наш журнал прогресса</h1>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">22 апреля 2025</div>
-                <div class="timeline-content">
-                    <h3>Посещение карьерного марафона</h3>
-                    <p>Мы посетили выставки 4 компаний: Яндекс, Сбербанк, Wildberries и ВТБ. Собрали информацию о стажировках и программах обучения.</p>
-                    <img src="images/marathon/main.jpg" alt="Мероприятие" style="max-width: 100%; border-radius: 4px;">
-                </div>
+    <main>
+        <section class="journal">
+            <div class="container">
+                <h2>Журнал проекта</h2>
+                
+                <article class="entry">
+                    <h3>15 марта 2024</h3>
+                    <img src="assets/images/meeting.jpg" alt="Совещание">
+                    <p>Проведено первое совещание команды. Определены основные задачи и сроки выполнения проекта.</p>
+                </article>
+                
+                <article class="entry">
+                    <h3>1 апреля 2024</h3>
+                    <p>Завершена разработка прототипа датчика качества воздуха. Начато тестирование.</p>
+                </article>
+                
+                <article class="entry">
+                    <h3>20 апреля 2024</h4>
+                    <video controls>
+                        <source src="assets/videos/demo.mp4" type="video/mp4">
+                    </video>
+                    <p>Создан первый работающий прототип системы. Видеодемонстрация доступна выше.</p>
+                </article>
             </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-date">23 апреля 2025</div>
-                <div class="timeline-content">
-                    <h3>Анализ требований</h3>
-                    <p>Проанализировали требования к кандидатам в разных компаниях:</p>
-                    <ul>
-                        <li>Яндекс: алгоритмические задачи на C++</li>
-                        <li>Сбербанк: знание Java/Python</li>
-                        <li>Wildberries: готовность к обучению</li>
-                        <li>ВТБ: знание SQL и аналитики</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-date">25 апреля 2025</div>
-                <div class="timeline-content">
-                    <h3>Создание сайта-отчета</h3>
-                    <p>Разработали этот сайт для систематизации полученной информации и демонстрации нашего опыта.</p>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="main-footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Карьерный марафон</h3>
-                    <p>Московский Политех<br>22 апреля 2025 года</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Команда проекта</h3>
-                    <ul>
-                        <li><a href="team.html">Участники</a></li>
-                        <li><a href="journal.html">Наш опыт</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Контакты</h3>
-                    <p>vladik.shulgin11@gmail.com</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>© 2025 Команда Московского Политеха. Все права защищены.</p>
-            </div>
+            <p>© 2025 EcoMonitor. Московский Политех</p>
         </div>
     </footer>
 </body>
