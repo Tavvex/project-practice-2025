@@ -2,127 +2,53 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLP Text Analyzer | О проекте</title>
+    <title>О проекте | NLP Text Analyzer</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип">
                 <h1>NLP Text Analyzer</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="about.html" class="active">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
-                    <li><a href="resources.html">Ресурсы</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="about-project">
+        <section class="project-description">
             <h2>О проекте</h2>
-            <div class="project-description">
-                <div class="project-text">
-                    <p>NLP Text Analyzer - это программный комплекс для анализа текстовых данных, разработанный в рамках учебного проекта в Московском Политехе.</p>
-                    <p>Проект объединяет современные методы обработки естественного языка (NLP) с удобным интерфейсом для исследователей и аналитиков.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-features">
-            <h2>Функции анализатора</h2>
+            <p>NLP Text Analyzer — это инструмент для анализа текста с использованием методов обработки естественного языка (NLP).</p>
             
-            <div class="feature-tabs">
-                <div class="tab-header">
-                    <button class="tab-btn active" data-tab="frequency">Частотный анализ</button>
-                    <button class="tab-btn" data-tab="ner">Распознавание сущностей</button>
-                    <button class="tab-btn" data-tab="sentiment">Анализ тональности</button>
-                    <button class="tab-btn" data-tab="topics">Тематический анализ</button>
-                </div>
-                
-                <div class="tab-content active" id="frequency">
-                    <div class="tab-description">
-                        <h3>Частотный анализ текста</h3>
-                        <p>Определение наиболее часто встречающихся слов и словосочетаний в тексте:</p>
-                        <ul>
-                            <li>Подсчет частотности отдельных слов</li>
-                            <li>Выявление N-грамм (словосочетаний)</li>
-                            <li>Визуализация в виде облака тегов</li>
-                            <li>Сравнительный анализ нескольких текстов</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                
-                <div class="tab-content" id="ner">
-                    <div class="tab-description">
-                        <h3>Распознавание именованных сущностей (NER)</h3>
-                        <p>Автоматическое выявление и классификация именованных сущностей в тексте:</p>
-                        <ul>
-                            <li>Имена людей (PER)</li>
-                            <li>Организации (ORG)</li>
-                            <li>Географические названия (LOC)</li>
-                            <li>Даты и время (DATE/TIME)</li>
-                            <li>Денежные суммы (MONEY)</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                
-                <div class="tab-content" id="sentiment">
-                    <div class="tab-description">
-                        <h3>Анализ тональности текста</h3>
-                        <p>Определение эмоциональной окраски текста:</p>
-                        <ul>
-                            <li>Позитивная/негативная/нейтральная оценка</li>
-                            <li>Определение эмоций (радость, гнев, страх и др.)</li>
-                            <li>Анализ субъективности текста</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-                
-                <div class="tab-content" id="topics">
-                    <div class="tab-description">
-                        <h3>Тематический анализ</h3>
-                        <p>Автоматическое определение ключевых тем в тексте:</p>
-                        <ul>
-                            <li>Выявление скрытых тематик</li>
-                            <li>Кластеризация документов по темам</li>
-                            <li>Визуализация тематической структуры</li>
-                        </ul>
-                    </div>
-                    
-                </div>
+            <div class="feature">
+                <h3>Частотный анализ</h3>
+                <p>Определяет самые часто встречающиеся слова и словосочетания в тексте. Полезен для анализа ключевых тем.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Распознавание сущностей</h3>
+                <p>Находит имена людей, организации, географические названия и другие именованные сущности.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Анализ тональности</h3>
+                <p>Определяет эмоциональную окраску текста (позитивная, нейтральная, негативная).</p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>NLP Text Analyzer</h3>
-                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Контакты</h3>
-                    <p>Московский Политех</p>
-                    <p>project@nlpanalyzer.edu</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
-            </div>
+            <p>© 2025 NLP Text Analyzer. Московский Политех.</p>
         </div>
     </footer>
-
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
