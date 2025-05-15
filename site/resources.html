@@ -2,56 +2,127 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Ресурсы - EcoMonitor</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Text Analyzer | Ресурсы</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
-                <h1>EcoMonitor</h1>
+                <img src="assets/images/logo.png" alt="NLP Analyzer Logo">
+                <h1>NLP Text Analyzer</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
-                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="resources.html" class="active">Ресурсы</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section class="resources">
-            <div class="container">
-                <h2>Полезные ресурсы</h2>
-                
+            <h2>Полезные ресурсы</h2>
+            
+            <div class="resources-grid">
                 <div class="resource-card">
-                    <h3>Партнёры</h3>
-                    <ul>
-                        <li><a href="https://mospolytech.ru" target="_blank">Московский Политех</a></li>
-                        <li><a href="https://eco.gov.ru" target="_blank">Минприроды России</a></li>
-                    </ul>
+                    <div class="resource-icon">
+                        <img src="assets/icons/university.png" alt="Университет">
+                    </div>
+                    <div class="resource-content">
+                        <h3>Заказчик проекта</h3>
+                        <p>Московский Политехнический университет</p>
+                        <a href="https://mospolytech.ru" target="_blank" class="btn btn-small">Перейти на сайт</a>
+                    </div>
                 </div>
                 
                 <div class="resource-card">
-                    <h3>Техническая документация</h3>
-                    <ul>
-                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-                    </ul>
+                    <div class="resource-icon">
+                        <img src="assets/icons/github.png" alt="GitHub">
+                    </div>
+                    <div class="resource-content">
+                        <h3>Исходный код</h3>
+                        <p>GitHub репозиторий проекта</p>
+                        <a href="https://github.com/example/nlp-analyzer" target="_blank" class="btn btn-small">Перейти к коду</a>
+                    </div>
                 </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <img src="assets/icons/python.png" alt="Python">
+                    </div>
+                    <div class="resource-content">
+                        <h3>Обучающие материалы</h3>
+                        <p>Документация по Python и NLP</p>
+                        <div class="resource-links">
+                            <a href="https://docs.python.org/3/" target="_blank">Python Docs</a>
+                            <a href="https://spacy.io/usage" target="_blank">SpaCy Docs</a>
+                            <a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <img src="assets/icons/book.png" alt="Книги">
+                    </div>
+                    <div class="resource-content">
+                        <h3>Дополнительные материалы</h3>
+                        <p>Полезные ресурсы по NLP</p>
+                        <div class="resource-links">
+                            <a href="https://nlp.stanford.edu/" target="_blank">Stanford NLP</a>
+                            <a href="https://course.fast.ai/" target="_blank">Fast.ai</a>
+                            <a href="https://www.kaggle.com/learn/natural-language-processing" target="_blank">Kaggle NLP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h2>Обратная связь</h2>
+            <p>Если у вас есть вопросы или предложения по проекту, напишите нам:</p>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 EcoMonitor. Московский Политех</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLP Text Analyzer</h3>
+                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Московский Политех</p>
+                    <p>project@nlpanalyzer.edu</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
