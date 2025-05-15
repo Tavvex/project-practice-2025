@@ -3,55 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoMonitor - Мониторинг экологии</title>
+    <title>Учебный проект | NLP анализатор текста</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
-                <h1>EcoMonitor</h1>
-            </div>
+            <h1>NLP анализатор текста</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section class="hero">
-            <div class="container">
-                <h2>Система мониторинга экологических показателей</h2>
-                <p>Реальное время • Точные данные • Прогнозная аналитика</p>
+            <img src="assets/images/nlp-hero.jpg" alt="NLP анализ текста" class="hero-image">
+            <div class="hero-text">
+                <h2>Аннотация проекта</h2>
+                <p>Разработка программного комплекса для анализа текстовых данных с использованием методов обработки естественного языка (NLP). Проект включает создание графического интерфейса и расширение функционала инструмента QuickNLPFreqTool.</p>
             </div>
         </section>
-
+        
         <section class="features">
-            <div class="container">
-                <div class="feature-card">
-                    <img src="assets/images/diagram.png" alt="Диаграмма">
-                    <h3>Мониторинг воздуха</h3>
-                    <p>Контроль уровня CO₂, PM2.5 и других показателей</p>
-                </div>
-                <div class="feature-card">
-                    <img src="assets/images/diagram.png" alt="Диаграмма">
-                    <h3>Водные ресурсы</h3>
-                    <p>Анализ качества воды в водоёмах</p>
-                </div>
+            <div class="card">
+                <img src="assets/images/ocr-icon.png" alt="OCR">
+                <h3>Распознавание текста</h3>
+                <p>Технологии OCR для обработки сканированных документов и изображений с текстом.</p>
+            </div>
+            
+            <div class="card">
+                <img src="assets/images/ai-icon.png" alt="AI">
+                <h3>Анализ текста</h3>
+                <p>Выявление ключевых тем, частотности слов и именованных сущностей в тексте.</p>
+            </div>
+            
+            <div class="card">
+                <img src="assets/images/ui-icon.png" alt="UI">
+                <h3>Удобный интерфейс</h3>
+                <p>Графический интерфейс для удобной работы с инструментами анализа.</p>
+            </div>
+        </section>
+        
+        <section class="video-demo">
+            <h2>Демонстрация работы</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/пример" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 EcoMonitor. Московский Политех</p>
+            <p>© 2025 Учебный проект. Московский Политех.</p>
+            <div class="social-links">
+                <a href="#"><img src="assets/icons/github.svg" alt="GitHub"></a>
+                <a href="#"><img src="assets/icons/telegram.svg" alt="Telegram"></a>
+            </div>
         </div>
     </footer>
 </body>

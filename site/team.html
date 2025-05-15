@@ -2,45 +2,86 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Команда - EcoMonitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда | NLP анализатор текста</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
-                <h1>EcoMonitor</h1>
-            </div>
+            <h1>NLP анализатор текста</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="team">
-            <div class="container">
-                <h2>Наша команда</h2>
-                
-                <div class="member">
-                    <img src="assets/images/team.jpg" alt="Иван Петров">
-                    <h3>Иван Петров</h3>
-                    <p><strong>Роль:</strong> Руководитель проекта</p>
-                    <p><strong>Вклад:</strong> Координация работы, разработка архитектуры</p>
+    <main class="container">
+        <h2>Наша команда</h2>
+        
+        <section class="team-members">
+            <div class="member-card">
+                <img src="assets/images/team-member1.jpg" alt="Шульгин Владислав">
+                <h3>Шульгин Владислав</h3>
+                <p class="role">Frontend разработчик</p>
+                <p class="contribution">Разработал графический интерфейс приложения с использованием библиотеки Dear PyGui. Создал систему навигации и визуализации результатов анализа.</p>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>Dear PyGui</span>
+                    <span>UI/UX</span>
                 </div>
-                
-                <div class="member">
-                    <img src="assets/images/team.jpg" alt="Анна Сидорова">
-                    <h3>Анна Сидорова</h3>
-                    <p><strong>Роль:</strong> Backend-разработчик</p>
-                    <p><strong>Вклад:</strong> Разработка API, работа с базами данных</p>
+            </div>
+            
+            <div class="member-card">
+                <img src="assets/images/team-member2.jpg" alt="Конев Владимир">
+                <h3>Конев Владимир</h3>
+                <p class="role">Backend разработчик</p>
+                <p class="contribution">Реализовал основные алгоритмы обработки текста, интеграцию с OCR системами и модуль тематического анализа. Оптимизировал производительность.</p>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>NLP</span>
+                    <span>OCR</span>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <img src="assets/images/team-member3.jpg" alt="Смирнов Андрей">
+                <h3>Смирнов Андрей</h3>
+                <p class="role">Руководитель проекта</p>
+                <p class="contribution">Координировал работу команды, разрабатывал архитектуру системы, отвечал за взаимодействие с заказчиком и подготовку документации.</p>
+                <div class="skills">
+                    <span>Управление проектами</span>
+                    <span>Архитектура</span>
+                    <span>Документирование</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="team-stats">
+            <h3>Статистика работы</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">1500+</div>
+                    <div class="stat-label">строк кода</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">модулей</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">недель работы</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label">выполнения</div>
                 </div>
             </div>
         </section>
@@ -48,7 +89,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 EcoMonitor. Московский Политех</p>
+            <p>© 2025 Учебный проект. Московский Политех.</p>
         </div>
     </footer>
 </body>

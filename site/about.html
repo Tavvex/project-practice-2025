@@ -2,45 +2,82 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>О проекте - EcoMonitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте | NLP анализатор текста</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-   <header>
+    <header>
         <div class="container">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
-                <h1>EcoMonitor</h1>
-            </div>
+            <h1>NLP анализатор текста</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
                     <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="about">
-            <div class="container">
-                <h2>О проекте EcoMonitor</h2>
-                <div class="content-block">
-                    <img src="assets/images/meeting.jpg" alt="Работа над проектом">
-                    <div class="text">
-                        <h3>Цель проекта</h3>
-                        <p>Создание системы для мониторинга экологических показателей в городской среде с возможностью прогнозирования.</p>
-                        
-                        <h3>Технологии</h3>
-                        <ul>
-                            <li>Датчики качества воздуха и воды</li>
-                            <li>Облачная платформа для сбора данных</li>
-                            <li>Веб-интерфейс для визуализации</li>
-                        </ul>
-                    </div>
+    <main class="container">
+        <h2>О проекте</h2>
+        
+        <section class="project-goals">
+            <h3>Цели проекта</h3>
+            <p>Разработка программного комплекса для анализа текстовых данных с использованием методов обработки естественного языка (NLP). Основные цели:</p>
+            <ul>
+                <li>Создание удобного графического интерфейса для существующего NLP инструмента</li>
+                <li>Расширение функционала анализа текста</li>
+                <li>Интеграция с системами распознавания текста (OCR)</li>
+                <li>Разработка модуля тематического анализа текста</li>
+            </ul>
+            <img src="assets/images/project-scheme.png" alt="Схема проекта" class="scheme-image">
+        </section>
+        
+        <section class="project-features">
+            <h3>Основные функции</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Частотный анализ</h4>
+                    <p>Определение наиболее часто встречающихся слов и словосочетаний в тексте</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Распознавание именованных сущностей</h4>
+                    <p>Выявление имен, организаций, мест и других именованных сущностей в тексте</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Тематическое моделирование</h4>
+                    <p>Автоматическое определение ключевых тем в текстовых документах</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Визуализация результатов</h4>
+                    <p>Графическое представление результатов анализа в виде диаграмм и облаков тегов</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="project-tech">
+            <h3>Используемые технологии</h3>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="assets/icons/python.svg" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/icons/spacy.svg" alt="SpaCy">
+                    <span>SpaCy</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/icons/sklearn.svg" alt="Scikit-learn">
+                    <span>Scikit-learn</span>
+                </div>
+                <div class="tech-item">
+                    <img src="assets/icons/dearpygui.svg" alt="Dear PyGui">
+                    <span>Dear PyGui</span>
                 </div>
             </div>
         </section>
@@ -48,7 +85,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 EcoMonitor. Московский Политех</p>
+            <p>© 2025 Учебный проект. Московский Политех.</p>
         </div>
     </footer>
 </body>

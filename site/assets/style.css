@@ -1,105 +1,290 @@
 /* Базовые стили */
 :root {
-    --primary: #2e7d32;
-    --secondary: #81c784;
-    --light: #f1f8e9;
-    --dark: #1b5e20;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* Шапка */
 header {
-    background-color: white;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo img {
-    height: 50px;
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
-    gap: 2rem;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: var(--dark);
     font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-nav a.active {
-    color: var(--primary);
-    border-bottom: 2px solid var(--primary);
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
 }
 
 /* Основное содержимое */
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* Герой-секция */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/meeting.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+}
+
+/* Карточки */
+.card {
+    background-color: var(--light-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
 }
 
 .features {
-    padding: 3rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
-.feature-card, .resource-card {
+/* Видео */
+.video-demo {
+    margin: 40px 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Команда */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.member-card {
     background: white;
     border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid var(--light-color);
+}
+
+.role {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.contribution {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.skills span {
+    background-color: var(--light-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Статистика */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-item {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.9;
 }
 
 /* Подвал */
 footer {
-    background-color: var(--dark);
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social-links img:hover {
+    opacity: 1;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    nav ul {
+    .hero {
         flex-direction: column;
-        gap: 0.5rem;
     }
     
-    .content-block {
+    .hero-image, .hero-text {
+        width: 100%;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
         flex-direction: column;
+        gap: 10px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
 }
