@@ -3,90 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О проекте | NLP анализатор текста</title>
+    <title>NLP Text Analyzer | О проекте</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>NLP анализатор текста</h1>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="NLP Analyzer Logo">
+                <h1>NLP Text Analyzer</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
-                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="about.html" class="active">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
-                    <li><a href="resources.html">Ресурсы</a></li>
-                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <h2>О проекте</h2>
-        
-        <section class="project-goals">
-            <h3>Цели проекта</h3>
-            <p>Разработка программного комплекса для анализа текстовых данных с использованием методов обработки естественного языка (NLP). Основные цели:</p>
-            <ul>
-                <li>Создание удобного графического интерфейса для существующего NLP инструмента</li>
-                <li>Расширение функционала анализа текста</li>
-                <li>Интеграция с системами распознавания текста (OCR)</li>
-                <li>Разработка модуля тематического анализа текста</li>
-            </ul>
-            <img src="assets/images/project-scheme.png" alt="Схема проекта" class="scheme-image">
-        </section>
-        
-        <section class="project-features">
-            <h3>Основные функции</h3>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h4>Частотный анализ</h4>
-                    <p>Определение наиболее часто встречающихся слов и словосочетаний в тексте</p>
+        <section class="about-project">
+            <h2>О проекте</h2>
+            <div class="project-description">
+                <div class="project-text">
+                    <p>NLP Text Analyzer - это программный комплекс для анализа текстовых данных, разработанный в рамках учебного проекта в Московском Политехе.</p>
+                    <p>Проект объединяет современные методы обработки естественного языка (NLP) с удобным интерфейсом для исследователей и аналитиков.</p>
+                    
+                    <h3>Технологии проекта</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <img src="assets/icons/python.svg" alt="Python">
+                            <span>Python 3.10+</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/icons/spacy.svg" alt="SpaCy">
+                            <span>SpaCy</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/icons/sklearn.svg" alt="Scikit-learn">
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h4>Распознавание именованных сущностей</h4>
-                    <p>Выявление имен, организаций, мест и других именованных сущностей в тексте</p>
-                </div>
-                <div class="feature-card">
-                    <h4>Тематическое моделирование</h4>
-                    <p>Автоматическое определение ключевых тем в текстовых документах</p>
-                </div>
-                <div class="feature-card">
-                    <h4>Визуализация результатов</h4>
-                    <p>Графическое представление результатов анализа в виде диаграмм и облаков тегов</p>
+                <div class="project-image">
+                    <img src="assets/images/architecture.png" alt="Архитектура проекта">
                 </div>
             </div>
         </section>
-        
-        <section class="project-tech">
-            <h3>Используемые технологии</h3>
-            <div class="tech-stack">
-                <div class="tech-item">
-                    <img src="assets/icons/python.svg" alt="Python">
-                    <span>Python</span>
+
+        <section class="project-features">
+            <h2>Функции анализатора</h2>
+            
+            <div class="feature-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="frequency">Частотный анализ</button>
+                    <button class="tab-btn" data-tab="ner">Распознавание сущностей</button>
+                    <button class="tab-btn" data-tab="sentiment">Анализ тональности</button>
+                    <button class="tab-btn" data-tab="topics">Тематический анализ</button>
                 </div>
-                <div class="tech-item">
-                    <img src="assets/icons/spacy.svg" alt="SpaCy">
-                    <span>SpaCy</span>
+                
+                <div class="tab-content active" id="frequency">
+                    <div class="tab-description">
+                        <h3>Частотный анализ текста</h3>
+                        <p>Определение наиболее часто встречающихся слов и словосочетаний в тексте:</p>
+                        <ul>
+                            <li>Подсчет частотности отдельных слов</li>
+                            <li>Выявление N-грамм (словосочетаний)</li>
+                            <li>Визуализация в виде облака тегов</li>
+                            <li>Сравнительный анализ нескольких текстов</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/images/frequency-analysis.png" alt="Частотный анализ">
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <img src="assets/icons/sklearn.svg" alt="Scikit-learn">
-                    <span>Scikit-learn</span>
+                
+                <div class="tab-content" id="ner">
+                    <div class="tab-description">
+                        <h3>Распознавание именованных сущностей (NER)</h3>
+                        <p>Автоматическое выявление и классификация именованных сущностей в тексте:</p>
+                        <ul>
+                            <li>Имена людей (PER)</li>
+                            <li>Организации (ORG)</li>
+                            <li>Географические названия (LOC)</li>
+                            <li>Даты и время (DATE/TIME)</li>
+                            <li>Денежные суммы (MONEY)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/images/ner-example.png" alt="NER пример">
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <img src="assets/icons/dearpygui.svg" alt="Dear PyGui">
-                    <span>Dear PyGui</span>
+                
+                <div class="tab-content" id="sentiment">
+                    <div class="tab-description">
+                        <h3>Анализ тональности текста</h3>
+                        <p>Определение эмоциональной окраски текста:</p>
+                        <ul>
+                            <li>Позитивная/негативная/нейтральная оценка</li>
+                            <li>Определение эмоций (радость, гнев, страх и др.)</li>
+                            <li>Анализ субъективности текста</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/images/sentiment-analysis.png" alt="Анализ тональности">
+                    </div>
                 </div>
+                
+                <div class="tab-content" id="topics">
+                    <div class="tab-description">
+                        <h3>Тематический анализ</h3>
+                        <p>Автоматическое определение ключевых тем в тексте:</p>
+                        <ul>
+                            <li>Выявление скрытых тематик</li>
+                            <li>Кластеризация документов по темам</li>
+                            <li>Визуализация тематической структуры</li>
+                        </ul>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/images/topic-modeling.png" alt="Тематический анализ">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-video">
+            <h2>Видеопрезентация проекта</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/пример" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Учебный проект. Московский Политех.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLP Text Analyzer</h3>
+                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Московский Политех</p>
+                    <p>project@nlpanalyzer.edu</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

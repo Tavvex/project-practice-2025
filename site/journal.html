@@ -2,59 +2,88 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Журнал - EcoMonitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Text Analyzer | Журнал</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="Логотип EcoMonitor">
-                <h1>EcoMonitor</h1>
+                <img src="assets/images/logo.png" alt="NLP Analyzer Logo">
+                <h1>NLP Text Analyzer</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
-                    <li><a href="journal.html">Журнал</a></li>
-                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="journal.html" class="active">Журнал</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section class="journal">
-            <div class="container">
-                <h2>Журнал проекта</h2>
+            <h2>Журнал проекта</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">23 апреля 2025</div>
+                    <div class="timeline-content">
+                        <h3>Начало работы</h3>
+                        <p>Составлен план проекта, распределены роли в команде. Определены основные технологии и инструменты для реализации.</p>
+                        <div class="timeline-image">
+                            <img src="assets/images/planning.jpg" alt="Планирование">
+                        </div>
+                    </div>
+                </div>
                 
-                <article class="entry">
-                    <h3>15 марта 2024</h3>
-                    <img src="assets/images/meeting.jpg" alt="Совещание">
-                    <p>Проведено первое совещание команды. Определены основные задачи и сроки выполнения проекта.</p>
-                </article>
+                <div class="timeline-item">
+                    <div class="timeline-date">5 мая 2025</div>
+                    <div class="timeline-content">
+                        <h3>Реализация основного функционала</h3>
+                        <p>Завершена разработка базовых модулей анализа текста: частотного анализа, распознавания сущностей и анализа тональности.</p>
+                        <div class="timeline-image">
+                            <img src="assets/images/coding.jpg" alt="Разработка">
+                        </div>
+                    </div>
+                </div>
                 
-                <article class="entry">
-                    <h3>1 апреля 2024</h3>
-                    <p>Завершена разработка прототипа датчика качества воздуха. Начато тестирование.</p>
-                </article>
-                
-                <article class="entry">
-                    <h3>20 апреля 2024</h4>
-                    <video controls>
-                        <source src="assets/videos/demo.mp4" type="video/mp4">
-                    </video>
-                    <p>Создан первый работающий прототип системы. Видеодемонстрация доступна выше.</p>
-                </article>
+                <div class="timeline-item">
+                    <div class="timeline-date">13 мая 2025</div>
+                    <div class="timeline-content">
+                        <h3>Завершение проекта</h3>
+                        <p>Интеграция всех модулей, тестирование системы, подготовка документации и презентации проекта.</p>
+                        <div class="timeline-image">
+                            <img src="assets/images/final.jpg" alt="Завершение">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 EcoMonitor. Московский Политех</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLP Text Analyzer</h3>
+                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Московский Политех</p>
+                    <p>project@nlpanalyzer.edu</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

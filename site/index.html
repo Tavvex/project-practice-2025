@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учебный проект | NLP анализатор текста</title>
+    <title>NLP Text Analyzer | Главная</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>NLP анализатор текста</h1>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="NLP Analyzer Logo">
+                <h1>NLP Text Analyzer</h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html" class="active">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
                     <li><a href="team.html">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
-                    <li><a href="resources.html">Ресурсы</a></li>
-                    <li><a href="partner.html">Партнёр</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,49 +26,74 @@
 
     <main class="container">
         <section class="hero">
-            <img src="assets/images/nlp-hero.jpg" alt="NLP анализ текста" class="hero-image">
-            <div class="hero-text">
-                <h2>Аннотация проекта</h2>
-                <p>Разработка программного комплекса для анализа текстовых данных с использованием методов обработки естественного языка (NLP). Проект включает создание графического интерфейса и расширение функционала инструмента QuickNLPFreqTool.</p>
+            <div class="hero-content">
+                <h2>Мощный инструмент для анализа текста</h2>
+                <p>Используя современные методы обработки естественного языка (NLP), наш анализатор предоставляет глубокие инсайты о ваших текстовых данных.</p>
+                <a href="about.html" class="btn">Узнать больше</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-analytics.png" alt="Анализ текста">
             </div>
         </section>
-        
-        <section class="features">
-            <div class="card">
-                <img src="assets/images/ocr-icon.png" alt="OCR">
-                <h3>Распознавание текста</h3>
-                <p>Технологии OCR для обработки сканированных документов и изображений с текстом.</p>
-            </div>
-            
-            <div class="card">
-                <img src="assets/images/ai-icon.png" alt="AI">
-                <h3>Анализ текста</h3>
-                <p>Выявление ключевых тем, частотности слов и именованных сущностей в тексте.</p>
-            </div>
-            
-            <div class="card">
-                <img src="assets/images/ui-icon.png" alt="UI">
-                <h3>Удобный интерфейс</h3>
-                <p>Графический интерфейс для удобной работы с инструментами анализа.</p>
+
+        <section class="key-features">
+            <h2>Ключевые возможности</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="assets/icons/frequency.png" alt="Частотный анализ">
+                    <h3>Частотный анализ</h3>
+                    <p>Определение наиболее часто встречающихся слов и словосочетаний</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/icons/ner.png" alt="NER">
+                    <h3>Распознавание сущностей</h3>
+                    <p>Выявление имен, организаций, локаций и других именованных сущностей</p>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/icons/sentiment.png" alt="Тональность">
+                    <h3>Анализ тональности</h3>
+                    <p>Определение эмоциональной окраски текста</p>
+                </div>
             </div>
         </section>
-        
-        <section class="video-demo">
-            <h2>Демонстрация работы</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/пример" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <section class="demo">
+            <h2>Как это работает</h2>
+            <div class="demo-container">
+                <div class="demo-text">
+                    <p>Попробуйте наш анализатор прямо сейчас:</p>
+                    <textarea placeholder="Введите текст для анализа..."></textarea>
+                    <button class="btn">Анализировать</button>
+                </div>
+                <div class="demo-result">
+                    <div class="result-placeholder">
+                        <p>Здесь будут результаты анализа</p>
+                        <img src="assets/images/analysis-example.png" alt="Пример анализа">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>© 2025 Учебный проект. Московский Политех.</p>
-            <div class="social-links">
-                <a href="#"><img src="assets/icons/github.svg" alt="GitHub"></a>
-                <a href="#"><img src="assets/icons/telegram.svg" alt="Telegram"></a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLP Text Analyzer</h3>
+                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Московский Политех</p>
+                    <p>project@nlpanalyzer.edu</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
             </div>
         </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
