@@ -2,89 +2,221 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLP Text Analyzer | Команда</title>
+    <title>Команда | NLP Text Analyzer</title>
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Стили для компактного отображения */
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .member-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4a6fa5;
+        }
+        
+        .member-name {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .member-group {
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .team-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .search-box {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 250px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
+                <img src="assets/images/logo.png" alt="Логотип">
                 <h1>NLP Text Analyzer</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="about.html">О проекте</a></li>
-                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="team.html" class="active">Команда</a></li>
                     <li><a href="journal.html">Журнал</a></li>
-                    <li><a href="resources.html">Ресурсы</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="team-members">
-            <h2>Наша команда</h2>
-            
-            <div class="members-grid">
-                <div class="member-card">
-                    <img src="assets/images/team-member1.jpg" alt="Шульгин Владислав">
-                    <h3>Шульгин Владислав</h3>
-                    <p class="role">Frontend разработчик</p>
-                    <p class="contribution">Разработал графический интерфейс приложения с использованием библиотеки Dear PyGui. Создал систему навигации и визуализации результатов анализа.</p>
-                    <div class="skills">
-                        <span>Python</span>
-                        <span>Dear PyGui</span>
-                        <span>UI/UX</span>
-                    </div>
-                </div>
-                
-                <div class="member-card">
-                    <img src="assets/images/team-member2.jpg" alt="Конев Владимир">
-                    <h3>Конев Владимир</h3>
-                    <p class="role">Backend разработчик</p>
-                    <p class="contribution">Реализовал основные алгоритмы обработки текста, интеграцию с OCR системами и модуль тематического анализа. Оптимизировал производительность.</p>
-                    <div class="skills">
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>OCR</span>
-                    </div>
-                </div>
-                
-                <div class="member-card">
-                    <img src="assets/images/team-member3.jpg" alt="Смирнов Андрей">
-                    <h3>Смирнов Андрей</h3>
-                    <p class="role">Руководитель проекта</p>
-                    <p class="contribution">Координировал работу команды, разрабатывал архитектуру системы, отвечал за взаимодействие с заказчиком и подготовку документации.</p>
-                    <div class="skills">
-                        <span>Управление проектами</span>
-                        <span>Архитектура</span>
-                        <span>Документирование</span>
-                    </div>
-                </div>
+        <section class="team-section">
+            <div class="team-header">
+                <h2>Наша команда</h2>
+                <input type="text" class="search-box" placeholder="Поиск по участникам...">
             </div>
-        </section>
-
-        <section class="team-stats">
-            <h3>Статистика работы</h3>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-value">500+</div>
-                    <div class="stat-label">строк кода</div>
+            
+            <div class="team-members">
+                <!-- Участники группы 241-336 -->
+                <div class="member-card">
+                    <div class="member-name">Баханов Владимир Владимирович</div>
+                    <div class="member-group">Группа: 241-336</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value">8</div>
-                    <div class="stat-label">модулей</div>
+                
+                <!-- Участники группы 241-364 -->
+                <div class="member-card">
+                    <div class="member-name">Бачурина Дарья Вадимовна</div>
+                    <div class="member-group">Группа: 241-364</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value">14</div>
-                    <div class="stat-label">недель работы</div>
+                
+                <div class="member-card">
+                    <div class="member-name">Бикбова Эвита Эдуардовна</div>
+                    <div class="member-group">Группа: 241-363</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">выполнения</div>
+                
+                <div class="member-card">
+                    <div class="member-name">Болотная Дарья Сергеевна</div>
+                    <div class="member-group">Группа: 241-334</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Галуцких Станислав Александрович</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Григорьева Юлия Евгеньевна</div>
+                    <div class="member-group">Группа: 241-022</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Кабанов Дмитрий Романович</div>
+                    <div class="member-group">Группа: 241-363</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Конев Владимир Дмитриевич</div>
+                    <div class="member-group">Группа: 241-326</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Лазарев Тимофей Дмитриевич</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Ланщеков Егор Алексеевич</div>
+                    <div class="member-group">Группа: 241-326</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Медоев Максим Аланович</div>
+                    <div class="member-group">Группа: 241-323</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Мурадов Дмитрий</div>
+                    <div class="member-group">Группа: 241-363</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Ндоно Серна Пьер Сириль</div>
+                    <div class="member-group">Группа: 241-021</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Негматуллозода Рустамджони Шухрат</div>
+                    <div class="member-group">Группа: 241-332</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Нестерчук Антон Васильевич</div>
+                    <div class="member-group">Группа: 241-326</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Осецимская Мария Вячеславовна</div>
+                    <div class="member-group">Группа: 241-331</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Панов Денис Сергеевич</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Печуркина Карина Алексеевна</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Романенко Николай Николаевич</div>
+                    <div class="member-group">Группа: 241-334</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Сидоров Дмитрий Алексеевич</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Смирнов Андрей Сергеевич</div>
+                    <div class="member-group">Группа: 241-326</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Снегирева Кристина Олеговна</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Сорокина Александра Романовна</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Стороженко Святослав Валериевич</div>
+                    <div class="member-group">Группа: 241-326</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Фадеев Глеб Владимирович</div>
+                    <div class="member-group">Группа: 241-364</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Федоренко Владислав Витальевич</div>
+                    <div class="member-group">Группа: 241-335</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Шерешев Роман Кириллович</div>
+                    <div class="member-group">Группа: 241-361</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Шульгин Владислав Павлович</div>
+                    <div class="member-group">Группа: 241-326</div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="member-name">Юдин Дмитрий Денисович</div>
+                    <div class="member-group">Группа: 241-353</div>
                 </div>
             </div>
         </section>
@@ -109,6 +241,23 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script>
+        // Поиск по участникам
+        document.querySelector('.search-box').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const members = document.querySelectorAll('.member-card');
+            
+            members.forEach(member => {
+                const name = member.querySelector('.member-name').textContent.toLowerCase();
+                const group = member.querySelector('.member-group').textContent.toLowerCase();
+                
+                if (name.includes(searchTerm) || group.includes(searchTerm)) {
+                    member.style.display = 'block';
+                } else {
+                    member.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
