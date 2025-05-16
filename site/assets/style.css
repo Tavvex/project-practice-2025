@@ -631,3 +631,41 @@ footer {
 .form-group textarea {
     resize: vertical;
 }
+/* Стили для страниц с markdown-контентом */
+.project-description ul, 
+.project-description ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-description li {
+    margin-bottom: 0.5rem;
+}
+
+.project-description pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.project-description code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    background: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.tutorial-step {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tutorial-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}

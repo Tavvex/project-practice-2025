@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Карьерный марафон | BindWord XPr</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BindWord XP</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="career-marathon.html" class="active">Карьерный марафон</a></li>
+                    <li><a href="telegram-bot.html">Телеграм-бот</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-description">
+            <h2>Карьерный марафон</h2>
+            <p>22 апреля 2025 года наша команда посетила мероприятие, проводимое <strong>Московским Политехом</strong>, "Карьерный марафон". В день проведения мы посетили выставки крупных компаний со значительным IT-отделами.</p>
+            
+            <h3>Участники мероприятия:</h3>
+            <ul>
+                <li>Yandex</li>
+                <li>Сбербанк России</li>
+                <li>Wildberries</li>
+                <li>ВТБ-банк</li>
+            </ul>
+
+            <div class="feature">
+                <h3>Young&&Yandex</h3>
+                <p>На стенде от Young&&Yandex нам рассказали о наборе в летнюю школу с разными направлениями подготовки:</p>
+                <ol>
+                    <li>Школа разработки интерфейсов</li>
+                    <li>Школа бэкенд-разработки</li>
+                    <li>Школа мобильной разработки</li>
+                    <li>Школа аналитиков-разработчиков и другие</li>
+                </ol>
+                <p>Пример кода для алгоритмической задачи "Выставление тегов":</p>
+                <pre><code>def main():  
+    n = int(input())  
+    if n == 1:  
+        print(1)  
+    elif n == 2:  
+        print(2)  
+    else:  
+        tags = [0] * 36  
+        tags[1] = 1  
+        tags[2] = 1  
+        for i in range(3,n+1):  
+            tags[i] = tags[i-1] + tags[i-2]  
+        print(sum(tags))  
+if __name__ == '__main__':  
+    main()</code></pre>
+            </div>
+
+            <div class="feature">
+                <h3>Сбербанк России</h3>
+                <p>Для студентов IT-направлений у Сбербанка есть две программы обучения:</p>
+                <ul>
+                    <li><strong>Летняя цифровая школа Сбера</strong></li>
+                    <li><strong>Школа 21</strong> - бесплатные IT-курсы с трудоустройством</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Wildberries</h3>
+                <p>В "WB Техношколе" доступно множество бесплатных курсов:</p>
+                <ul>
+                    <li>Android-джун</li>
+                    <li>Горутиновый Golang</li>
+                    <li>Хардкорный JS</li>
+                    <li>Компьютерное зрение</li>
+                    <li>IOS-джун</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>ВТБ-Банк</h3>
+                <p>Программа "ВТБ юниор" предлагает стажировки для студентов третьего и выше курсов:</p>
+                <ul>
+                    <li>Аналитик данных</li>
+                    <li>Бизнес-аналитик</li>
+                    <li>Продуктивный аналитик</li>
+                    <li>Системный аналитик</li>
+                    <li>Финансовый аналитик</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLP Text Analyzer</h3>
+                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>vladik.shulgin11@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

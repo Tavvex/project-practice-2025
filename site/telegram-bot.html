@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Телеграм-бот | BindWord XP</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        .tutorial-step {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .tutorial-step:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>BindWord XP</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                    <li><a href="career-marathon.html">Карьерный марафон</a></li>
+                    <li><a href="telegram-bot.html" class="active">Телеграм-бот</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-description">
+            <h2>Собственный чат-бот в Telegram</h2>
+            <p>Наша команда разработала телеграм-бота <strong>ToYouFromNow</strong> - аналог сайта FutureMe в обёртке телеграмм-бота, который позволяет пользователю отправить сообщения "в будущее" и получить их обратно в выбранное время.</p>
+            
+            <div class="tutorial-step">
+                <h3>1. Получение токена</h3>
+                <p>Для работы бота в Telegram необходим токен - уникальный ключ, который используется для аутентификации и идентификации бота. Токен можно получить в чате с телеграмм-ботом <strong>@BotFather</strong>, написав команду <code>/newbot</code>.</p>
+            </div>
+
+            <div class="tutorial-step">
+                <h3>2. Загрузка библиотек</h3>
+                <p>Для разработки бота понадобятся следующие библиотеки:</p>
+                <ul>
+                    <li>aiogram</li>
+                    <li>asyncio</li>
+                    <li>sqlalchemy</li>
+                    <li>dotenv</li>
+                </ul>
+                <p>Пример установки:</p>
+                <pre><code>pip install aiogram</code></pre>
+            </div>
+
+            <div class="tutorial-step">
+                <h3>3. Скелет бота и скрытие токена</h3>
+                <p>Пример основного кода бота:</p>
+                <pre><code>import asyncio
+from aiogram import Bot, Dispatcher
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  
+bot = Bot(os.getenv('TOKEN'))  
+dp = Dispatcher()
+
+async def main():
+    await dp.start_polling(bot)
+
+if __name__ == '__main__':  
+    try:  
+        asyncio.run(main())  
+    except KeyboardInterrupt:  
+        print("Exit")</code></pre>
+            </div>
+
+            <div class="tutorial-step">
+                <h3>4. Обработка сообщений</h3>
+                <p>Пример обработчика команд:</p>
+                <pre><code>from aiogram import Router, Bot  
+from aiogram.filters import CommandStart, Command  
+from aiogram.types import Message
+
+router = Router()
+
+@router.message(CommandStart())  
+async def start(message: Message):  
+    await message.answer('sup &lt;3! Этот бот позволяет отправить письмо себе в будущее!')</code></pre>
+            </div>
+
+            <div class="tutorial-step">
+                <h3>5. Конечный автомат состояний (FSM)</h3>
+                <p>Пример работы с состояниями:</p>
+                <pre><code>from aiogram.fsm.state import StatesGroup,State  
+from aiogram.fsm.context import FSMContext
+
+class Parser(StatesGroup):   
+    text = State()  
+    date = State()
+
+@router.message(Command('send'))  
+async def send(message: Message, state: FSMContext):  
+    await state.set_state(Parser.text)  
+    await message.answer("Напиши сообщение, которое ты получишь в будущем!")</code></pre>
+            </div>
+
+            <div class="tutorial-step">
+                <h3>6. Работа с базой данных</h3>
+                <p>Пример подключения к SQLite:</p>
+                <pre><code>from sqlalchemy.ext.asyncio import async_sessionmaker, create_async_engine  
+
+engine = create_async_engine(url='sqlite+aiosqlite:///db.sqlite3')  
+async_session = async_sessionmaker(engine)</code></pre>
+            </div>
+
+            <div class="tutorial-step">
+                <h3>7. Фоновые процессы</h3>
+                <p>Пример реализации фоновой задачи:</p>
+                <pre><code>stop_flag = True  
+
+async def check_messages():  
+    while stop_flag:  
+        # логика функции  
+        await asyncio.sleep(60)  
+
+async def on_startup():  
+    asyncio.create_task(check_messages())  
+
+async def on_shutdown():  
+    stop_flag = False</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NLP Text Analyzer</h3>
+                    <p>Учебный проект по дисциплине "Проектная деятельность"</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>vladik.shulgin11@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NLP Text Analyzer. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
